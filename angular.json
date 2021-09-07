@@ -47,13 +47,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           },
           "configurations": {
@@ -105,6 +100,40 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "sb-ng-performance:build"
+          }
+        }
+      }
+    },
+    "storybook": {
+      "projectType": "application",
+      "root": ".storybook",
+      "sourceRoot": ".storybook",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "index": "",
+            "main": "",
+            "outputPath": "dist/storybook",
+            "tsConfig": ".storybook/tsconfig.json",
+            "assets": [],
+            "styles": [],
+            "scripts": []
+          }
+        },
+        "run-storybook": {
+          "builder": "@storybook/angular:start-storybook",
+          "options": {
+            "browserTarget": "storybook:build",
+            "compodoc": false,
+            "port": 6006,
+            "staticDir": [],
+            "quiet": true
+          },
+          "configurations": {
+            "ci": {
+              "ci": true
+            }
           }
         }
       }
