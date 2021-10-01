@@ -436,26 +436,6 @@
                 "defaultValue": "{\n  production: false\n}"
             },
             {
-                "name": "grid",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "Story",
-                "defaultValue": "(args) => ({\n  template: \"hello world\",\n  // component: DemoHyIgxGridComponent,\n  // props: args,\n})"
-            },
-            {
-                "name": "LoggedIn",
-                "ctype": "miscellaneous",
-                "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
-                "deprecated": false,
-                "deprecationMessage": "",
-                "type": "",
-                "defaultValue": "Template.bind({})"
-            },
-            {
                 "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
@@ -466,7 +446,7 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "LoggedOut",
+                "name": "LoggedIn",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
                 "file": "src/stories/Header.stories.ts",
@@ -486,24 +466,24 @@
                 "defaultValue": "Template.bind({})"
             },
             {
-                "name": "meta",
+                "name": "LoggedOut",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Button.stories.ts",
+                "file": "src/stories/Header.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Meta",
-                "defaultValue": "{\n  title: \"Hyland UI Infragistics/Components/Grid\",\n  // parameters: {\n  //   docs: { page: MDXProperties },\n  //   hyA11y: {\n  //     check: false,\n  //   },\n  // },\n\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        // DemoHyIgxGridComponent,\n        // DemoHyIgxTreeGridComponent,\n        // DemoHyIgxHierarchicalGridComponent,\n      ],\n      imports: [\n        // StorybookSharedModule,\n        // HyIgxModule,\n      ],\n    }),\n  ],\n  argTypes: {\n    paging: {\n      control: {\n        type: \"boolean\",\n      },\n    },\n    // rowSelection: {\n    //   control: 'select',\n    //   options: [\n    //     GridSelectionMode.none,\n    //     GridSelectionMode.single,\n    //     GridSelectionMode.multiple,\n    //     GridSelectionMode.multipleCascade,\n    //   ],\n    // },\n  },\n  args: {\n    paging: false,\n    // rowSelection: GridSelectionMode.single,\n  },\n}"
+                "type": "",
+                "defaultValue": "Template.bind({})"
             },
             {
                 "name": "Template",
                 "ctype": "miscellaneous",
                 "subtype": "variable",
-                "file": "src/stories/Header.stories.ts",
+                "file": "src/stories/Button.stories.ts",
                 "deprecated": false,
                 "deprecationMessage": "",
-                "type": "Story<Header>",
-                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
+                "type": "Story<Button>",
+                "defaultValue": "(args: Button) => ({\n  props: args,\n})"
             },
             {
                 "name": "Template",
@@ -514,6 +494,16 @@
                 "deprecationMessage": "",
                 "type": "Story<Page>",
                 "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+            },
+            {
+                "name": "Template",
+                "ctype": "miscellaneous",
+                "subtype": "variable",
+                "file": "src/stories/Header.stories.ts",
+                "deprecated": false,
+                "deprecationMessage": "",
+                "type": "Story<Header>",
+                "defaultValue": "(args: Header) => ({\n  props: args,\n})"
             }
         ],
         "functions": [],
@@ -544,26 +534,36 @@
                     "defaultValue": "{\n  production: false\n}"
                 }
             ],
-            "src/stories/Button.stories.ts": [
+            "src/stories/Page.stories.ts": [
                 {
-                    "name": "grid",
+                    "name": "LoggedIn",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/Page.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story",
-                    "defaultValue": "(args) => ({\n  template: \"hello world\",\n  // component: DemoHyIgxGridComponent,\n  // props: args,\n})"
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
                 },
                 {
-                    "name": "meta",
+                    "name": "LoggedOut",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Button.stories.ts",
+                    "file": "src/stories/Page.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Meta",
-                    "defaultValue": "{\n  title: \"Hyland UI Infragistics/Components/Grid\",\n  // parameters: {\n  //   docs: { page: MDXProperties },\n  //   hyA11y: {\n  //     check: false,\n  //   },\n  // },\n\n  decorators: [\n    moduleMetadata({\n      declarations: [\n        // DemoHyIgxGridComponent,\n        // DemoHyIgxTreeGridComponent,\n        // DemoHyIgxHierarchicalGridComponent,\n      ],\n      imports: [\n        // StorybookSharedModule,\n        // HyIgxModule,\n      ],\n    }),\n  ],\n  argTypes: {\n    paging: {\n      control: {\n        type: \"boolean\",\n      },\n    },\n    // rowSelection: {\n    //   control: 'select',\n    //   options: [\n    //     GridSelectionMode.none,\n    //     GridSelectionMode.single,\n    //     GridSelectionMode.multiple,\n    //     GridSelectionMode.multipleCascade,\n    //   ],\n    // },\n  },\n  args: {\n    paging: false,\n    // rowSelection: GridSelectionMode.single,\n  },\n}"
+                    "type": "",
+                    "defaultValue": "Template.bind({})"
+                },
+                {
+                    "name": "Template",
+                    "ctype": "miscellaneous",
+                    "subtype": "variable",
+                    "file": "src/stories/Page.stories.ts",
+                    "deprecated": false,
+                    "deprecationMessage": "",
+                    "type": "Story<Page>",
+                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
                 }
             ],
             "src/stories/Header.stories.ts": [
@@ -598,36 +598,16 @@
                     "defaultValue": "(args: Header) => ({\n  props: args,\n})"
                 }
             ],
-            "src/stories/Page.stories.ts": [
-                {
-                    "name": "LoggedIn",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
-                {
-                    "name": "LoggedOut",
-                    "ctype": "miscellaneous",
-                    "subtype": "variable",
-                    "file": "src/stories/Page.stories.ts",
-                    "deprecated": false,
-                    "deprecationMessage": "",
-                    "type": "",
-                    "defaultValue": "Template.bind({})"
-                },
+            "src/stories/Button.stories.ts": [
                 {
                     "name": "Template",
                     "ctype": "miscellaneous",
                     "subtype": "variable",
-                    "file": "src/stories/Page.stories.ts",
+                    "file": "src/stories/Button.stories.ts",
                     "deprecated": false,
                     "deprecationMessage": "",
-                    "type": "Story<Page>",
-                    "defaultValue": "(args: Page) => ({\n  props: args,\n})"
+                    "type": "Story<Button>",
+                    "defaultValue": "(args: Button) => ({\n  props: args,\n})"
                 }
             ]
         },
@@ -687,17 +667,7 @@
                 "type": "variable",
                 "linktype": "miscellaneous",
                 "linksubtype": "variable",
-                "name": "grid",
-                "coveragePercent": 0,
-                "coverageCount": "0/1",
-                "status": "low"
-            },
-            {
-                "filePath": "src/stories/Button.stories.ts",
-                "type": "variable",
-                "linktype": "miscellaneous",
-                "linksubtype": "variable",
-                "name": "meta",
+                "name": "Template",
                 "coveragePercent": 0,
                 "coverageCount": "0/1",
                 "status": "low"
