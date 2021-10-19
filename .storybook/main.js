@@ -8,6 +8,7 @@ module.exports = {
   core: {
     builder: "webpack5",
   },
+  framework: 'angular',
   features: {
     storyStoreV7: true,
   },
