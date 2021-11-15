@@ -1,3 +1,4 @@
+import { SelectionModel } from '@angular/cdk/collections';
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { User } from './User';
 
@@ -52,6 +53,9 @@ import { User } from './User';
 export default class HeaderComponent {
   @Input()
   user: User | null = null;
+
+  @Input()
+  selection: SelectionModel<any> | null = null;
 
   @Output()
   onLogin = new EventEmitter<Event>();
