@@ -2,7 +2,10 @@
   "extends": "./tsconfig.json",
   "compilerOptions": {
     "outDir": "./out-tsc/app",
-    "types": []
+    "types": [],
+    "paths": {
+      "@app-storybook": [".storybook/custom/public-api.ts"],
+    }
   },
   "files": [
     "src/main.ts",
