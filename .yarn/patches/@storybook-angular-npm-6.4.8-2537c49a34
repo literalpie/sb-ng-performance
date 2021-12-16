@@ -1,0 +1,13 @@
+diff --git a/dist/ts3.9/server/angular-cli-webpack-13.x.x.js b/dist/ts3.9/server/angular-cli-webpack-13.x.x.js
+index 77b40b207c6ef19d24d977a39ab7f8d11b53531a..d8cf3eec292627efe437a202ab92efe2e3ba7654 100644
+--- a/dist/ts3.9/server/angular-cli-webpack-13.x.x.js
++++ b/dist/ts3.9/server/angular-cli-webpack-13.x.x.js
+@@ -76,7 +76,7 @@ exports.getWebpackConfig = function (baseConfig, _a) {
+                         // Default options
+                         index: 'noop-index', main: 'noop-main', outputPath: 'noop-out' }, builderOptions), { 
+                         // Fixed options
+-                        optimization: false, namedChunks: false, progress: false, buildOptimizer: false, aot: false }), builderContext, function (wco) { return [getCommonConfig(wco), getStylesConfig(wco), getTypescriptWorkerPlugin(wco)]; })];
++                        optimization: false, namedChunks: false, progress: false, buildOptimizer: false, aot: false }), builderContext, function (wco) { return [getCommonConfig(wco), getStylesConfig(wco)]; })];
+                 case 1:
+                     cliConfig = (_e.sent()).config;
+                     entry = __spreadArrays(baseConfig.entry, ((_b = cliConfig.entry.styles) !== null && _b !== void 0 ? _b : []), ((_c = cliConfig.entry.polyfills) !== null && _c !== void 0 ? _c : []));

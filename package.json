@@ -38,12 +38,13 @@
     "@storybook/addon-docs": "^6.4.8",
     "@storybook/addon-essentials": "^6.4.8",
     "@storybook/addon-links": "^6.4.8",
-    "@storybook/angular": "^6.4.8",
+    "@storybook/angular": "patch:@storybook/angular@npm:6.4.8#.yarn/patches/@storybook-angular-npm-6.4.8-2537c49a34",
     "@storybook/builder-webpack5": "^6.4.8",
     "@storybook/manager-webpack5": "^6.4.8",
     "@types/node": "^12.11.1",
     "@webcomponents/custom-elements": "^1.5.0",
     "babel-loader": "^8.2.2",
     "typescript": "~4.4.4"
-  }
+  },
+  "packageManager": "yarn@3.1.1"
 }
