@@ -47,8 +47,13 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": ["src/favicon.ico", "src/assets"],
-            "styles": ["src/styles.scss"],
+            "assets": [
+              "src/favicon.ico",
+              "src/assets"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -104,7 +109,7 @@
         }
       }
     },
-    "storybook": {
+    "storybook1": {
       "projectType": "application",
       "root": ".storybook",
       "sourceRoot": ".storybook",
